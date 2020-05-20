@@ -86,8 +86,9 @@ function getResultDescription(values){
 
 	(values.number1 == values.number2) ? count++ : false;
 	(values.number1 == values.number3) ? count++ : false;
+	(values.number2 == values.number3) ? count++ : false;
 
-	if(count == 2){
+	if(count >= 2){
 		return {
 			text : "All numbers are same",
 			color : "green"
